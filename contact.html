@@ -227,7 +227,7 @@
                 <section id="contact">
                     <div class="container mil-p-120-90">
                         <h3 class="mil-center mil-up mil-mb-120">Let's <span class="mil-thin">Talk</span></h3>
-                        <form class="row align-items-center" method="POST" data-netlify="true" action="/sucess.html">
+                        <form class="row align-items-center" name="contact" method="POST" data-netlify="true" action="/sucess.html">
                             <div class="col-lg-6 mil-up">
                                 <input type="text" placeholder="What's your name" name="name">
                             </div>
@@ -253,7 +253,7 @@
                 <!-- contact form end -->
 
                 <!-- footer -->
-<footer class="mil-dark-bg">
+                <footer class="mil-dark-bg">
                     <div class="mi-invert-fix">
                         <div class="container mil-p-120-60">
                             <div class="row justify-content-between">
@@ -263,8 +263,8 @@
 
                                     <p class="mil-light-soft mil-up mil-mb-30">Subscribe our newsletter:</p>
 
-                                    <form class="mil-subscribe-form mil-up">
-                                        <input type="text" placeholder="enter your email">
+                                    <form class="mil-subscribe-form mil-up" name="newsletter" method="POST" data-netlify="true">
+                                        <input type="text" placeholder="enter your email" name="email">
                                         <button type="submit" class="mil-button mil-icon-button-sm mil-arrow-place"></button>
                                     </form>
 
