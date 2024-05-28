@@ -4693,3 +4693,12 @@ html.is-animating .mil-menu-frame {
     -webkit-transition-delay: 0.3s;
     transition-delay: 0.3s;
 }
+
+.link-pdf {
+    color: #0071B3;
+}
+
+.link-pdf :hover {
+    color: #036198;
+    text-decoration: underline;
+}
