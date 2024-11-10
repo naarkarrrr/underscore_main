@@ -1022,7 +1022,7 @@ spaces
 }
 
 .mil-p-120-0 {
-    padding-top: 120px;
+    padding-top: 40px;
 }
 
 @media screen and (max-width: 992px) {
@@ -4719,4 +4719,16 @@ html.is-animating .mil-menu-frame {
 .custom-dropdown:focus {
     border-color: #007bff; /* Change to match your theme's focus color */
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Focus effect */
+}
+
+#flyers>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
 }
