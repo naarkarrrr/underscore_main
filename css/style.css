@@ -4703,3 +4703,20 @@ html.is-animating .mil-menu-frame {
     color: #036198;
     text-decoration: underline;
 }
+
+
+.custom-dropdown {
+    background-color: #fff; /* Match your form's background color */
+    color: rgb(0 0 1); /* Match text color */
+    padding: 22px; /* Adjust padding to align with other inputs */
+    border: 1px solid #ddd; /* Border styling similar to input fields */
+    border-radius: 5px; /* Match other input fields' corner radius */
+    transition: border-color 0.3s ease;
+    font-family: "Outfit", sans-serif;
+    font-size: large;
+}
+
+.custom-dropdown:focus {
+    border-color: #007bff; /* Change to match your theme's focus color */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Focus effect */
+}
