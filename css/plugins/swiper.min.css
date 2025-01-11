@@ -25,7 +25,7 @@
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    overflow: hidden;
+    overflow: auto;
     list-style: none;
     padding: 0;
     z-index: 1
@@ -311,7 +311,7 @@
 }
 
 .swiper-pagination-bullets-dynamic {
-    overflow: hidden;
+    overflow: auto;
     font-size: 0
 }
 
@@ -714,7 +714,7 @@ button.swiper-pagination-bullet {
 .swiper-creative .swiper-slide {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    overflow: hidden;
+    overflow: auto;
     transition-property: transform, opacity, height
 }
 
