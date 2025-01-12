@@ -11039,42 +11039,45 @@
         }
     };
     var gz = !1;
-    Aa("initEmbed", function(a) {
-        function b() {
-            var c = Tr(a),
-                d;
-            ao.ga && google.maps.hasOwnProperty("logger") && 0 !== c && (d = google.maps.logger.beginAvailabilityEvent(c));
-            document.body.style.overflow = "hidden";
-            (c = gz) || (c = th(), c = !(c.width * c.height));
-            if (c) d && google.maps.logger.cancelAvailabilityEvent(d);
-            else try {
-                gz = !0;
-                if (a) {
-                    var e = new Mr(a);
-                    if (e.na()) {
-                        var f = e.ma();
-                        Rr(f)
-                    }
-                    var g = e
-                } else g = new Mr;
-                co = R(g.i, 25, bo);
-                var h = document.getElementById("mapDiv");
-                if (B(g.i, 20, !1) || window.parent !== window || window.opener) z(g.i, 22, xo) ? new bz(g,
-                    h, d) : z(g.i, 23, xo) ? new vo(g, h) : d && google.maps.logger.endAvailabilityEvent(d, 10);
-                else {
-                    d && google.maps.logger.cancelAvailabilityEvent(d);
-                    document.body.textContent = "";
-                    var k = document.body,
-                        l = k.appendChild;
-                    var n = document.createRange().createContextualFragment(vg(wg(Or[0])));
-                    l.call(k, n)
+Aa("initEmbed", function(a) {
+    function b() {
+        var c = Tr(a),
+            d;
+        ao.ga && google.maps.hasOwnProperty("logger") && 0 !== c && (d = google.maps.logger.beginAvailabilityEvent(c));
+
+        // Remove or comment out the following line to keep the page scrollable
+        // document.body.style.overflow = "hidden";
+
+        (c = gz) || (c = th(), c = !(c.width * c.height));
+        if (c) d && google.maps.logger.cancelAvailabilityEvent(d);
+        else try {
+            gz = !0;
+            if (a) {
+                var e = new Mr(a);
+                if (e.na()) {
+                    var f = e.ma();
+                    Rr(f)
                 }
-            } catch (t) {
-                console.error(t), d && google.maps.logger.endAvailabilityEvent(d, 6)
+                var g = e
+            } else g = new Mr;
+            co = R(g.i, 25, bo);
+            var h = document.getElementById("mapDiv");
+            if (B(g.i, 20, !1) || window.parent !== window || window.opener) z(g.i, 22, xo) ? new bz(g,
+                h, d) : z(g.i, 23, xo) ? new vo(g, h) : d && google.maps.logger.endAvailabilityEvent(d, 10);
+            else {
+                d && google.maps.logger.cancelAvailabilityEvent(d);
+                document.body.textContent = "";
+                var k = document.body,
+                    l = k.appendChild;
+                var n = document.createRange().createContextualFragment(vg(wg(Or[0])));
+                l.call(k, n)
             }
+        } catch (t) {
+            console.error(t), d && google.maps.logger.endAvailabilityEvent(d, 6)
         }
-        "complete" === document.readyState ? b() : ql(window, "load", b);
-        ql(window, "resize", b)
-    });
-    if (window.onEmbedLoad) window.onEmbedLoad();
+    }
+    "complete" === document.readyState ? b() : ql(window, "load", b);
+    ql(window, "resize", b)
+});
+if (window.onEmbedLoad) window.onEmbedLoad();
 }).call(this);

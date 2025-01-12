@@ -80,6 +80,7 @@ body {
     -ms-scroll-chaining: none;
     overscroll-behavior: none;
     overflow: auto;
+    height: auto;
 }
 
 @media screen and (max-width: 768px) {
